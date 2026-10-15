@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#174b35">
+<title>西湖西山地运动公园｜骑行预约</title>
+<style>
+:root{--green:#176a43;--deep:#153d2b;--lime:#d9f27b;--bg:#f3f6f1;--muted:#6c7a70;--line:#e1e8e1;--white:#fff;--red:#b42318}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#18251d;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.5}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:760px;margin:auto;min-height:100vh;background:var(--bg);padding-bottom:82px}.topbar{background:#fff;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line)}.brand{font-weight:800;font-size:18px;color:var(--deep)}.small{font-size:12px;color:var(--muted)}.admin-open{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;color:var(--deep);font-size:13px}.hero{background:linear-gradient(135deg,#153d2b,#2e7650);color:#fff;padding:26px 20px 24px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:220px;height:220px;border:1px solid #ffffff24;border-radius:50%;right:-70px;top:-65px;box-shadow:0 0 0 25px #ffffff08,0 0 0 55px #ffffff08}.eyebrow{color:var(--lime);font-size:12px;letter-spacing:2px;font-weight:700}.hero h1{font-size:29px;line-height:1.25;margin:10px 0}.hero p{margin:0;color:#dce9df;font-size:14px;max-width:330px}.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.pill{font-size:12px;background:#ffffff17;border:1px solid #ffffff30;padding:6px 10px;border-radius:999px}.content{padding:16px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:14px}.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 10px}.stat strong{display:block;color:var(--green);font-size:18px}.stat span{font-size:11px;color:var(--muted)}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:17px;margin-bottom:14px;box-shadow:0 3px 14px #173d2b05}.card h2{font-size:18px;margin:0 0 14px;color:var(--deep)}.step{display:inline-flex;width:27px;height:27px;align-items:center;justify-content:center;border-radius:50%;background:var(--green);color:white;font-size:14px;margin-right:8px}.field{margin-bottom:13px}.field label{display:block;font-size:13px;font-weight:650;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;border:1px solid #d6e0d7;background:#fff;border-radius:11px;padding:12px 12px;outline:none;color:#17251b}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px #176a4312}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.counter{display:flex;align-items:center;gap:14px}.counter button{width:38px;height:38px;border:1px solid var(--line);border-radius:10px;background:#f8faf7;font-size:22px;color:var(--green)}.counter strong{min-width:22px;text-align:center;font-size:18px}.checkrow{display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:12px;background:#fbfdfb}.checkrow input{margin-top:5px;accent-color:var(--green)}.checkrow b{display:block;font-size:14px}.checkrow small{display:block;color:var(--muted);font-size:12px}.notice{background:#f0f7ed;color:#365c41;padding:11px 12px;border-radius:11px;font-size:12px;margin:12px 0}.summary{background:#f0f7f0;border-radius:13px;padding:13px;display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:12px}.summary strong{font-size:15px;color:var(--deep)}.btn{border:0;background:var(--green);color:#fff;border-radius:12px;padding:13px 16px;font-weight:750;width:100%;box-shadow:0 5px 12px #176a431b}.btn:disabled{background:#9eaaa1;cursor:not-allowed;box-shadow:none}.btn.secondary{background:#eef4ef;color:var(--deep);box-shadow:none;border:1px solid var(--line)}.btn.danger{background:#fff0ef;color:var(--red);box-shadow:none;border:1px solid #f3ceca}.section-title{display:flex;justify-content:space-between;align-items:center;gap:10px}.badge{font-size:11px;background:#e7f5e9;color:var(--green);padding:4px 8px;border-radius:999px;white-space:nowrap}.empty{text-align:center;color:var(--muted);padding:26px 10px;font-size:13px}.booking{border:1px solid var(--line);border-radius:13px;padding:13px;margin:10px 0}.booking-head{display:flex;justify-content:space-between;gap:8px}.booking h3{margin:0;font-size:15px}.booking p{font-size:12px;color:var(--muted);margin:7px 0}.booking-actions{display:flex;gap:8px;margin-top:10px}.booking-actions button{flex:1;padding:8px;border-radius:9px;border:1px solid var(--line);background:#fff;font-size:12px}.booking-actions .cancel{color:var(--red)}.hidden{display:none!important}.bottom{position:fixed;bottom:0;left:0;right:0;background:#ffffffef;backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:9px max(16px,calc((100vw - 728px)/2)) calc(9px + env(safe-area-inset-bottom));display:flex;gap:8px;z-index:6}.bottom button{flex:1;border:0;background:transparent;color:var(--muted);padding:5px;font-size:12px}.bottom button.active{color:var(--green);font-weight:800}.bottom span{display:block;font-size:19px}.toast{position:fixed;left:50%;bottom:100px;transform:translateX(-50%);background:#17271c;color:#fff;padding:10px 16px;border-radius:999px;font-size:13px;z-index:20;max-width:90%;text-align:center}.admin-banner{background:#fff6df;color:#785314;padding:10px 12px;border-radius:10px;font-size:12px;margin-bottom:12px}.mini{font-size:12px;color:var(--muted)}.inline{display:flex;align-items:center;gap:8px}.inline input{width:auto}.hr{height:1px;background:var(--line);margin:14px 0}.footer{text-align:center;color:#839087;font-size:11px;padding:10px 0 22px}@media(min-width:600px){.hero{padding:34px 28px}.content{padding:20px}.hero h1{font-size:34px}.card{padding:21px}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="topbar"><div><div class="brand">西湖西山地运动公园</div><div class="small">山地骑行 · 限量预约</div></div><button class="admin-open" id="adminOpen">管理入口</button></header>
+  <section class="hero"><div class="eyebrow">WEST HILLS · CYCLING</div><h1>把热爱，骑进山里。</h1><p>提前预约，确认人数。可选择轻蜂拉自行车上山服务，让骑行出发更轻松。</p><div class="pills"><span class="pill">✓ 每日限额</span><span class="pill">✓ 提前预约</span><span class="pill">✓ 轻蜂拉车上山</span></div></section>
+  <main class="content">
+    <section id="homeView">
+      <div class="stats"><div class="stat"><strong id="capacityStat">待设置</strong><span>每日预约上限</span></div><div class="stat"><strong id="bookedStat">0</strong><span>今日已预约人数</span></div><div class="stat"><strong id="remainingStat">待设置</strong><span>今日剩余名额</span></div></div>
+      <form id="bookingForm">
+        <div class="card">
+          <h2><span class="step">1</span>选择预约时间</h2>
+          <div class="field"><label for="date">预约日期</label><input type="date" id="date" required></div>
+          <div class="field"><label for="slot">入场时段</label><select id="slot"><option>上午场 08:00–12:00</option><option>下午场 13:00–17:00</option></select></div>
+          <div class="notice" id="quotaNotice">请选择日期查看剩余名额。预约成功后将自动确认。</div>
+        </div>
+        <div class="card">
+          <h2><span class="step">2</span>确认骑行人数</h2>
+          <div class="field"><label for="people">预约总人数（含同行人员）</label><div class="counter"><button type="button" id="minusPeople" aria-label="减少人数">−</button><strong id="peopleNum">2</strong><button type="button" id="plusPeople" aria-label="增加人数">＋</button><span class="mini">人</span></div></div>
+        </div>
+        <div class="card">
+          <h2><span class="step">3</span>轻蜂拉自行车上山</h2>
+          <label class="checkrow"><input type="checkbox" id="needTransport"><span><b>需要轻蜂拉自行车上山</b><small id="feeLabel">服务价格待公园确认，提交前请联系工作人员核实。</small></span></label>
+          <div class="field hidden" id="bikeCountWrap" style="margin-top:13px"><label for="bikeCount">需要运输的自行车数量</label><div class="counter"><button type="button" id="minusBike">−</button><strong id="bikeNum">1</strong><button type="button" id="plusBike">＋</button><span class="mini">辆</span></div></div>
+        </div>
+        <div class="card">
+          <h2><span class="step">4</span>填写联系人信息</h2>
+          <div class="field"><label for="contact">联系人姓名</label><input id="contact" maxlength="30" placeholder="请输入联系人姓名" required></div>
+          <div class="field"><label for="phone">手机号码</label><input id="phone" type="tel" inputmode="tel" maxlength="20" placeholder="请输入可联系的手机号码" required></div>
+          <div class="field"><label for="remark">备注（选填）</label><textarea id="remark" rows="2" maxlength="200" placeholder="例如：同行儿童、车型或其他需求"></textarea></div>
+          <label class="inline mini"><input id="agree" type="checkbox" required> 我已阅读预约说明，并同意为预约目的使用上述联系信息。</label>
+          <div class="summary"><div><strong>预约摘要</strong><div class="mini" id="summaryText">选择日期后显示预约信息</div></div><div style="font-size:23px">🚵</div></div>
+          <button class="btn" id="submitBtn" type="submit" style="margin-top:14px">提交预约并自动确认</button>
+          <div class="mini" style="margin-top:10px">预约成功后会生成预约编号。请保存编号，按预约日期与时段到场。</div>
+        </div>
+      </form>
+    </section>
+    <section id="recordsView" class="hidden">
+      <div class="card"><div class="section-title"><h2 style="margin:0">我的预约记录</h2><span class="badge">本设备记录</span></div><p class="mini">输入预约时使用的手机号，查询本设备保存的预约记录。</p><div class="field"><label for="lookupPhone">手机号码</label><input id="lookupPhone" type="tel" placeholder="输入预约手机号"></div><button class="btn secondary" id="lookupBtn">查询预约</button><div id="myRecords"></div></div>
+    </section>
+    <section id="guideView" class="hidden">
+      <div class="card"><h2>骑行预约指南</h2><p>1. 选择预约日期与时段，填写实际到场总人数。</p><p>2. 如需轻蜂拉自行车上山，请勾选服务并填写车辆数量。</p><p>3. 预约名额以所选日期为单位计算，达到每日上限后将无法继续预约。</p><p>4. 请保留预约编号，并按预约时段到场。天气、道路及公园运营安排可能影响开放情况。</p><div class="notice">轻蜂拉车服务价格目前待公园设置。请在价格正式公布前向工作人员核实，网站不会自行收取费用。</div></div>
+    </section>
+    <section id="adminView" class="hidden">
+      <div class="card"><div class="section-title"><h2 style="margin:0">管理员后台</h2><span class="badge">本地演示</span></div><div class="admin-banner">重要：当前版本把数据保存在打开网页的这台设备/浏览器中。它不具备跨手机共享、云端同步或真实身份验证，正式运营前必须接入服务器。</div>
+        <div id="adminLogin"><div class="field"><label for="adminPassword">管理员密码</label><input id="adminPassword" type="password" placeholder="首次演示密码：123456"></div><button class="btn" id="loginBtn">进入管理后台</button></div>
+        <div id="adminPanel" class="hidden">
+          <h2 style="margin-top:18px">预约规则设置</h2>
+          <div class="grid2"><div class="field"><label for="dailyLimit">每日预约人数上限</label><input type="number" id="dailyLimit" min="1" max="10000" value="50"></div><div class="field"><label for="transportPrice">轻蜂服务价格（元/辆）</label><input type="number" id="transportPrice" min="0" max="100000" placeholder="待设置"></div></div>
+          <div class="field"><label for="newAdminPassword">修改管理员密码（选填）</label><input type="password" id="newAdminPassword" minlength="6" placeholder="至少 6 位；留空则不修改"></div>
+          <button class="btn" id="saveSettings">保存设置</button>
+          <div class="hr"></div><div class="section-title"><h2 style="margin:0">预约订单管理</h2><button class="admin-open" id="exportBtn">导出 CSV</button></div>
+          <div class="grid2" style="margin-top:12px"><div class="field"><label for="adminDate">按日期筛选</label><input type="date" id="adminDate"></div><div class="field"><label for="adminStatus">预约状态</label><select id="adminStatus"><option value="all">全部状态</option><option value="confirmed">已确认</option><option value="cancelled">已取消</option></select></div></div>
+          <div id="adminStats" class="notice"></div><div id="adminBookings"></div>
+          <button class="btn secondary" id="logoutBtn" style="margin-top:12px">退出管理后台</button>
+        </div>
+      </div>
+    </section>
+    <div class="footer">西湖西山地运动公园 · 安全骑行，文明出行</div>
+  </main>
+  <nav class="bottom"><button class="active" data-view="homeView"><span>⌂</span>预约</button><button data-view="recordsView"><span>▤</span>我的预约</button><button data-view="guideView"><span>♧</span>骑行指南</button><button data-view="adminView"><span>⚙</span>管理</button></nav>
+</div>
+<div id="toast" class="toast hidden"></div>
+<script>
+(() => {
+ const $=id=>document.getElementById(id);
+ const KEY='xihu-west-cycling-v1';
+ const defaultData={settings:{dailyLimit:null,transportPrice:null,adminPassword:'123456'},bookings:[]};
+ let data;
+ try{data=JSON.parse(localStorage.getItem(KEY))||defaultData}catch(e){data=defaultData}
+ data.settings={...defaultData.settings,...(data.settings||{})}; data.bookings=Array.isArray(data.bookings)?data.bookings:[];
+ let people=2,bikes=1,adminAuthed=false;
+ const today=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
+ $('date').min=today();$('date').value=today();$('adminDate').value=today();
+ const save=()=>{localStorage.setItem(KEY,JSON.stringify(data));renderStats();if(adminAuthed)renderAdmin()};
+ const toast=msg=>{ $('toast').textContent=msg;$('toast').classList.remove('hidden');setTimeout(()=>$('toast').classList.add('hidden'),2800)};
+ const activeForDate=date=>data.bookings.filter(b=>b.date===date&&b.status==='confirmed').reduce((s,b)=>s+b.people,0);
+ const remaining=date=>data.settings.dailyLimit?Math.max(0,Number(data.settings.dailyLimit)-activeForDate(date)):null;
+ const money=()=>data.settings.transportPrice===null||data.settings.transportPrice===''?'价格待设置':`¥${Number(data.settings.transportPrice).toFixed(2)}/辆`;
+ function renderStats(){const cap=data.settings.dailyLimit;$('capacityStat').textContent=cap?cap+'人':'待设置';$('bookedStat').textContent=activeForDate(today())+'人';$('remainingStat').textContent=cap?remaining(today())+'人':'待设置';$('feeLabel').textContent=`服务价格：${money()}。价格待设置时，请联系工作人员确认。`;updateQuota()}
+ function updateQuota(){const d=$('date').value||today(),cap=data.settings.dailyLimit,used=activeForDate(d),left=remaining(d);$('quotaNotice').textContent=cap?`${d} 已预约 ${used} 人，剩余 ${left} 人。名额按预约总人数计算。`:'每日预约上限尚未设置，暂不能提交预约。请联系公园管理员。';$('submitBtn').disabled=!cap||left<people;$('summaryText').textContent=`${d}｜${$('slot').value}｜${people}人｜${$('needTransport').checked?bikes+'辆（轻蜂拉车）':'不需要拉车服务'}`;}
+ function changePeople(n){people=Math.min(100,Math.max(1,people+n));$('peopleNum').textContent=people;updateQuota()}
+ function changeBikes(n){bikes=Math.min(30,Math.max(1,bikes+n));$('bikeNum').textContent=bikes}
+ $('minusPeople').onclick=()=>changePeople(-1);$('plusPeople').onclick=()=>changePeople(1);$('minusBike').onclick=()=>changeBikes(-1);$('plusBike').onclick=()=>changeBikes(1);
+ $('needTransport').onchange=()=>{$('bikeCountWrap').classList.toggle('hidden',!$('needTransport').checked);updateQuota()};
+ $('date').onchange=updateQuota;$('slot').onchange=updateQuota;
+ $('bookingForm').addEventListener('submit',e=>{e.preventDefault();const date=$('date').value,contact=$('contact').value.trim(),phone=$('phone').value.trim();if(!data.settings.dailyLimit){toast('管理员尚未设置每日预约上限');return}if(date<today()){toast('请选择今天或之后的日期');return}if(!contact||!phone){toast('请填写联系人和手机号');return}if(!/^[0-9+\-\s()]{6,20}$/.test(phone)){toast('请检查手机号格式');return}if(!$('agree').checked){toast('请先阅读并同意预约说明');return}if(remaining(date)<people){toast('该日期剩余名额不足，请减少人数或更换日期');return}
+ const id='XH'+Date.now().toString().slice(-8)+Math.random().toString(36).slice(2,5).toUpperCase();
+ const b={id,date,slot:$('slot').value,people,bikeService:$('needTransport').checked,bikes:$('needTransport').checked?bikes:0,contact,phone,remark:$('remark').value.trim(),status:'confirmed',createdAt:new Date().toISOString(),fee:data.settings.transportPrice===null?null:Number(data.settings.transportPrice)*($('needTransport').checked?bikes:0)};
+ data.bookings.unshift(b);save();toast('预约成功！编号：'+id);showView('recordsView');$('lookupPhone').value=phone;renderMyRecords(phone);$('bookingForm').reset();people=2;bikes=1;$('peopleNum').textContent=2;$('bikeNum').textContent=1;$('date').value=today();$('bikeCountWrap').classList.add('hidden');updateQuota();
+ });
+ function showView(id){['homeView','recordsView','guideView','adminView'].forEach(v=>$(v).classList.toggle('hidden',v!==id));document.querySelectorAll('.bottom button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));if(id==='recordsView')renderMyRecords($('lookupPhone').value);if(id==='adminView'){ $('adminLogin').classList.toggle('hidden',adminAuthed);$('adminPanel').classList.toggle('hidden',!adminAuthed);if(adminAuthed)renderAdmin()}}
+ document.querySelectorAll('.bottom button').forEach(b=>b.onclick=()=>showView(b.dataset.view));
+ $('adminOpen').onclick=()=>showView('adminView');
+ $('lookupBtn').onclick=()=>renderMyRecords($('lookupPhone').value);
+ function renderMyRecords(phone){const root=$('myRecords');root.innerHTML='';if(!phone.trim()){root.innerHTML='<div class="empty">请输入预约手机号进行查询。</div>';return}const rows=data.bookings.filter(b=>b.phone===phone.trim());if(!rows.length){root.innerHTML='<div class="empty">未找到记录。请确认手机号，并在创建预约的同一浏览器中查询。</div>';return}rows.forEach(b=>root.appendChild(bookingCard(b,false)))}
+ function bookingCard(b,admin){const el=document.createElement('div');el.className='booking';const status=b.status==='confirmed'?'已确认':'已取消';const fee=b.bikeService?(b.fee===null?'价格待确认':`¥${b.fee.toFixed(2)}`):'不需要';el.innerHTML=`<div class="booking-head"><h3>${esc(b.date)} · ${esc(b.slot)}</h3><span class="badge" style="${b.status==='cancelled'?'background:#fff0ef;color:#b42318':''}">${status}</span></div><p>预约编号：<b>${esc(b.id)}</b></p><p>联系人：${esc(b.contact)}　电话：${esc(b.phone)}</p><p>预约人数：${b.people} 人　轻蜂拉车：${b.bikeService?b.bikes+'辆':'不需要'}</p><p>服务费用：${fee}${b.remark?'　备注：'+esc(b.remark):''}</p><p>提交时间：${new Date(b.createdAt).toLocaleString('zh-CN')}</p>`;if(admin&&b.status==='confirmed'){const actions=document.createElement('div');actions.className='booking-actions';const cancel=document.createElement('button');cancel.className='cancel';cancel.textContent='取消预约';cancel.onclick=()=>{if(confirm('确定取消预约 '+b.id+' 吗？取消后将释放名额。')){b.status='cancelled';save();toast('预约已取消，名额已释放')}};const copy=document.createElement('button');copy.textContent='复制预约编号';copy.onclick=()=>{if(navigator.clipboard)navigator.clipboard.writeText(b.id).then(()=>toast('编号已复制')).catch(()=>toast('预约编号：'+b.id));else toast('预约编号：'+b.id)};actions.append(cancel,copy);el.appendChild(actions)}return el}
+ function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+ $('loginBtn').onclick=()=>{if($('adminPassword').value===data.settings.adminPassword){adminAuthed=true;$('adminLogin').classList.add('hidden');$('adminPanel').classList.remove('hidden');$('dailyLimit').value=data.settings.dailyLimit||'';$('transportPrice').value=data.settings.transportPrice??'';renderAdmin();toast('登录成功')}else toast('密码错误')};
+ $('saveSettings').onclick=()=>{const limit=Number($('dailyLimit').value),priceText=$('transportPrice').value.trim(),pw=$('newAdminPassword').value;if(!Number.isInteger(limit)||limit<1||limit>10000){toast('每日上限须填写 1–10000 的整数');return}if(priceText!==''&&(!Number.isFinite(Number(priceText))||Number(priceText)<0)){toast('请填写有效的服务价格');return}if(pw&&pw.length<6){toast('新密码至少 6 位');return}data.settings.dailyLimit=limit;data.settings.transportPrice=priceText===''?null:Number(priceText);if(pw)data.settings.adminPassword=pw;$('newAdminPassword').value='';save();toast('设置已保存');updateQuota()};
+ $('adminDate').onchange=renderAdmin;$('adminStatus').onchange=renderAdmin;
+ function renderAdmin(){if(!adminAuthed)return;const date=$('adminDate').value,status=$('adminStatus').value;const rows=data.bookings.filter(b=>(!date||b.date===date)&&(status==='all'||b.status===status));const total=rows.filter(b=>b.status==='confirmed').reduce((s,b)=>s+b.people,0);$('adminStats').textContent=`筛选结果：${rows.length} 笔预约；已确认人数 ${total} 人；该日期上限 ${data.settings.dailyLimit||'未设置'} 人；剩余 ${date&&data.settings.dailyLimit?remaining(date):'—'} 人。`;const root=$('adminBookings');root.innerHTML='';if(!rows.length){root.innerHTML='<div class="empty">当前筛选条件下没有预约。</div>';return}rows.forEach(b=>root.appendChild(bookingCard(b,true)))}
+ $('logoutBtn').onclick=()=>{adminAuthed=false;$('adminPassword').value='';showView('adminView');toast('已退出管理后台')};
+ $('exportBtn').onclick=()=>{if(!adminAuthed)return;const rows=data.bookings;const cols=['预约编号','日期','时段','人数','轻蜂拉车','自行车数量','联系人','手机号','状态','备注','创建时间'];const values=rows.map(b=>[b.id,b.date,b.slot,b.people,b.bikeService?'是':'否',b.bikes,b.contact,b.phone,b.status==='confirmed'?'已确认':'已取消',b.remark,b.createdAt]);const csv=[cols,...values].map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n');const blob=new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8;'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='西湖西山地运动公园预约记录.csv';a.click();URL.revokeObjectURL(url)};
+ renderStats();updateQuota();
+})();
+</script>
+</body>
+</html>
